@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Auth } from "aws-amplify";
 import { Authenticator } from "aws-amplify-react";
-import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import styled from "@emotion/styled";
 
 import awsExports from "./aws-exports";
