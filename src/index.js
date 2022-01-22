@@ -9,7 +9,6 @@ import "normalize.css/normalize.css";
 import "./index.css";
 import "@reach/tabs/styles.css";
 import "@reach/dialog/styles.css";
-import "@aws-amplify/ui-react/styles.css"
 import amplifyConfig from "./aws-exports";
 
 Amplify.configure(amplifyConfig);
