@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Auth } from "aws-amplify";
 import { Authenticator } from "aws-amplify-react";
+import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import styled from "@emotion/styled";
 import '@aws-amplify/ui-react/styles.css';
+
 
 import awsExports from "./aws-exports";
 import Screens from "./components/Screens";
@@ -69,14 +71,7 @@ function App() {
   ) : (
     <>
       <Title>Quick Notes</Title>
-      <Authenticator
-        onStateChange={authState => {
-          if (authState === "signedIn") {
-            checkLoggedIn();
-          }
-        }}
-        amplifyConfig={awsExports}
-      />
+      <AmplifyAuthenticator />
     </>
   );
 }
