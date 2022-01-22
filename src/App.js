@@ -55,6 +55,7 @@ function App() {
       .then(data => {
         const user = { username: data.username, ...data.attributes };
         setState({ isLoggedIn: true, user });
+        console.log(user);
       })
       .catch(error => console.log(error));
   };
