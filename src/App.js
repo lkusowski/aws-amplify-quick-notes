@@ -68,7 +68,15 @@ function App() {
   ) : (
     <>
       <Title>Quick Notes</Title>
-      <AmplifyAuthenticator />
+      <Authenticator
+        onStateChange={authState => {
+          if (authState === "signedIn") {
+            checkLoggedIn();
+          }
+        }}
+        amplifyConfig={awsExports}
+        theme={theme}
+      />
     </>
   );
 }
