@@ -76,7 +76,6 @@ function App() {
           }
         }}
         amplifyConfig={awsExports}
-        theme={theme}
       />
     </>
   );
