@@ -3,8 +3,6 @@ import { Auth } from "aws-amplify";
 import { Authenticator } from "aws-amplify-react";
 import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import styled from "@emotion/styled";
-import '@aws-amplify/ui-react/styles.css';
-
 
 import awsExports from "./aws-exports";
 import Screens from "./components/Screens";
